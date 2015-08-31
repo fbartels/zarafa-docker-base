@@ -12,7 +12,7 @@ RUN apt-get install -y wget
 # Downloading Zarafa packages
 RUN mkdir -p /root/packages \
 	&& wget --no-check-certificate --quiet \
-	https://download.zarafa.com/zarafa/drupal/download_platform.php?platform=beta/7.2/7.2.1-49597/zcp-7.2.1-49597-ubuntu-14.04-x86_64-forhome.tar.gz -O- \
+	https://download.zarafa.com/zarafa/drupal/download_platform.php?platform=beta/7.2/7.2.1-51272/zcp-7.2.1-51272-ubuntu-14.04-x86_64-forhome.tar.gz -O- \
 	| tar xz -C /root/packages --strip-components=1
 
 WORKDIR /root/packages
