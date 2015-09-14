@@ -10,8 +10,9 @@ RUN apt-get install -y wget
 
 # Use packages from download.zarafa.com
 # Downloading Zarafa packages
-#ENV DOWNLOADURL https://download.zarafa.com/zarafa/drupal/download_platform.php?platform=beta/7.2/7.2.1-51272/zcp-7.2.1-51272-ubuntu-14.04-x86_64-forhome.tar.gz
-ENV DOWNLOADURL http://9wd.de/files/zarafa/zcp-7.2.1-51630-ubuntu-14.04-x86_64-supported.tar.gz
+<<<<<<< HEAD
+#ENV DOWNLOADURL http://9wd.de/files/zarafa/zcp-7.2.1-51630-ubuntu-14.04-x86_64-supported.tar.gz
+ENV DOWNLOADURL http://download.zarafa.com/zarafa/drupal/download_platform.php?platform=beta/7.2/7.2.1-51665/zcp-7.2.1-51665-ubuntu-14.04-x86_64-supported.tar.gz
 RUN mkdir -p /root/packages \
 	&& wget --no-check-certificate --quiet \
 	$DOWNLOADURL -O- | tar xz -C /root/packages --strip-components=1
