@@ -4,7 +4,7 @@ MAINTAINER Felix Bartels "felix@host-consultants.de"
 # Set the env variable DEBIAN_FRONTEND to noninteractive
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get update -y && apt-get install -y wget
+RUN apt-get update -y && apt-get install -y apt-utils wget
 
 # Use packages from download.zarafa.com
 # Downloading Zarafa packages
